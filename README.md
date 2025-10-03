@@ -2,7 +2,7 @@
 ## LABORATORY 2: LAB2_TIMER
 ## Source Folder Structure
 The main code for each exercise is organized in the Core/Src/ directory as follows:
-text
+```text
 Core/
 │
 ├── Src/                        # Main embedded source code
@@ -38,3 +38,4 @@ Core/
 │
 └── Startup/
     └── startup_stm32f103c6ux.s   # Startup assembly code
+```
