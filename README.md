@@ -43,26 +43,26 @@ The main code for each exercise is organized in the Core/Src/ directory as follo
 ```text
 Core/
 │
-├── Src/
-│   ├── exercise1.c
-│   ├── exercise2.c
-│   ├── exercise3.c
-│   ├── exercise4.c
-│   ├── exercise5.c
-│   ├── exercise6.c
-│   ├── exercise7.c
-│   ├── exercise8.c
-│   ├── exercise9.c
-│   ├── exercise10.c
-│   ├── software_timer.c
-│   ├── main.c
-│   ├── stm32f1xx_hal_msp.c
-│   ├── stm32f1xx_it.c
-│   ├── syscalls.c
-│   ├── sysmem.c
-│   └── system_stm32f1xx.c
+├── Src/                        # Main embedded source code
+│   ├── exercise1.c             # Exercise 1 implementation
+│   ├── exercise2.c             # Exercise 2 implementation
+│   ├── exercise3.c             # Exercise 3 implementation
+│   ├── exercise4.c             # Exercise 4 implementation
+│   ├── exercise5.c             # Exercise 5 implementation
+│   ├── exercise6.c             # Exercise 6 implementation
+│   ├── exercise7.c             # Exercise 7 implementation
+│   ├── exercise8.c             # Exercise 8 implementation
+│   ├── exercise9.c             # Exercise 9 implementation
+│   ├── exercise10.c            # Exercise 10 implementation
+│   ├── software_timer.c        # Common software timer module
+│   ├── main.c                  # Entry point, macro to select exercise
+│   ├── stm32f1xx_hal_msp.c     # HAL MSP init
+│   ├── stm32f1xx_it.c          # Interrupt handlers
+│   ├── syscalls.c              # System call stubs
+│   ├── sysmem.c                # System memory allocation
+│   └── system_stm32f1xx.c      # System clock/config
 │
-├── Inc/
+├── Inc/                        # Header files for each exercise and main
 │   ├── exercise1.h
 │   ├── exercise2.h
 │   ├── exercise3.h
@@ -73,13 +73,13 @@ Core/
 │   ├── exercise8.h
 │   ├── exercise9.h
 │   ├── exercise10.h
-│   ├── software_timer.h
+│   ├── software_timer.h        # Common software timer header
 │   ├── main.h
 │   ├── stm32f1xx_hal_conf.h
 │   └── stm32f1xx_it.h
 │
 └── Startup/
-    └── startup_stm32f103c6ux.s
+    └── startup_stm32f103c6ux.s   # Startup assembly code
 ```
 ## 4. NOTE
 1. Ensure correct clock configuration in STM32CubeIDE before building.
