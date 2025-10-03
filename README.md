@@ -1,5 +1,11 @@
 # MICROCONTROLLER - MICROPROCESSOR  
 ## LABORATORY 2: LAB2_TIMER
+
+## 1. Schematic
+The code was simulated in **Proteus 8** using STM32F103C6.
+
+![Proteus Simulation]()
+
 ## Source Folder Structure
 The main code for each exercise is organized in the Core/Src/ directory as follows:
 ```text
